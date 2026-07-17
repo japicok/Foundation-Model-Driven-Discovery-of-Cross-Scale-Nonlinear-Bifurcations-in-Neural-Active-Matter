@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools==69.5.1", "wheel==0.43.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neural-bifurcation-atlas"
+version = "0.1.0"
+description = "Cross-scale nonlinear bifurcation detection in neural active matter"
+requires-python = ">=3.10"
+dependencies = ["numpy==1.26.4", "scipy==1.13.0", "torch==2.3.0", "omegaconf==2.3.0", "pandas==2.2.2", "scikit-learn==1.4.2", "h5py==3.11.0"]
+
+[project.scripts]
+nam-train = "neural_bifurcation_atlas.cli.train:main"
+nam-evaluate = "neural_bifurcation_atlas.cli.evaluate:main"
+nam-prepare = "neural_bifurcation_atlas.cli.prepare:main"
+
+[tool.setuptools.packages.find]
+where = ["code"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+packages = ["neural_bifurcation_atlas"]
+mypy_path = "code"

@@ -1,0 +1,12 @@
+numpy==1.26.4
+scipy==1.13.0
+torch==2.3.0
+omegaconf==2.3.0
+pandas==2.2.2
+scikit-learn==1.4.2
+h5py==3.11.0
+pytest==8.2.0
+ruff==0.4.4
+black==24.4.2
+mypy==1.10.0
+types-PyYAML==6.0.12.20240311

@@ -1,0 +1,40 @@
+seed: 7
+device: cpu
+data:
+  dataset: synthetic
+  sample_rate: 64
+  window_seconds: 4
+  stride_seconds: 1
+  channels: 4
+model:
+  embedding_dim: 16
+  manifold_dim: 3
+  hidden_dim: 32
+  invertible_blocks: 2
+  atlas_hidden: [16, 8]
+  atlas_classes: 3
+  backbones: [spectral, temporal, spatial]
+science:
+  normal_form_weight: 0.01
+  coherence_threshold: 0.8
+  normal_coordinate_tolerance: 0.2
+  disagreement_sigma: 3.0
+  coherence_window: 8
+  exponent_window_seconds: 8
+training:
+  batch_size: 4
+  gradient_accumulation: 1
+  epochs: 1
+  learning_rate: 0.001
+  weight_decay: 0.0
+  optimizer: adamw
+  scheduler: cosine
+  warmup_steps: 0
+  precision: fp32
+  gradient_clip: 1.0
+  seeds: 1
+  world_size: 1
+evaluation:
+  bootstrap_resamples: 100
+  calibration_bins: 10
+  alpha: 0.05

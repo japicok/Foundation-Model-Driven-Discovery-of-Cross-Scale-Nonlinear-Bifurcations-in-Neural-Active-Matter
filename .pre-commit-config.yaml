@@ -1,0 +1,21 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.4
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.10.0
+    hooks:
+      - id: mypy
+*** Add File: Foundation_Model_Driven_Discovery_of_Cross_Scale_Nonlinear_Bifurcations_in_Neural_Active_Matter/dataset_links.txt
+VitalDB | https://vitaldb.net/dataset/ | current | CC BY-NC-SA 4.0 | open
+PhysioNet GABAergic multitaper spectra | https://physionet.org/content/eeg-power-anesthesia/1.0.0/ | 1.0.0 | PhysioNet terms | open
+Sleep-EDF Expanded | https://physionet.org/content/sleep-edfx/1.0.0/ | 1.0.0 | ODC-BY 1.0 | open
+SHHS | https://sleepdata.org/datasets/shhs | current | NSRR Data Access and Use Agreement | credentialed
+MESA Sleep Ancillary | https://sleepdata.org/datasets/mesa | current | NSRR Data Access and Use Agreement | credentialed
+CAP Sleep Database | https://physionet.org/content/capslpdb/1.0.0/ | 1.0.0 | ODC-BY 1.0 | open
+MIMIC-IV | https://physionet.org/content/mimiciv/2.2/ | 2.2 | PhysioNet Credentialed Health Data License 1.5.0 | credentialed
+eICU Collaborative Research Database | https://physionet.org/content/eicu-crd/2.0/ | 2.0 | PhysioNet Credentialed Health Data License 1.5.0 | credentialed
+HiRID | https://physionet.org/content/hirid/1.1.1/ | 1.1.1 | PhysioNet Credentialed Health Data License 1.5.0 | credentialed

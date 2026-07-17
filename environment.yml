@@ -1,0 +1,17 @@
+name: neural-bifurcation-atlas
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10.14
+  - pytorch=2.3.0
+  - pytorch-cuda=12.1
+  - numpy=1.26.4
+  - scipy=1.13.0
+  - pandas=2.2.2
+  - scikit-learn=1.4.2
+  - h5py=3.11.0
+  - pip=24.0
+  - pip:
+      - omegaconf==2.3.0
